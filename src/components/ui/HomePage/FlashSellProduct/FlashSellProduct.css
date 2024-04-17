@@ -1,0 +1,88 @@
+.startIcon{
+    color:#FEBC0C;
+}
+.flashSellProductWrap{
+    width: 315px;
+    padding: 5px 13px;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 3px;
+    transition: all .5s cubic-bezier(0.49, 0.45, 0.64, 0.63);
+   
+}
+.flashSellProductWrap::after{
+    content: '';
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background:#111;
+    z-index: 5;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    opacity:0;
+    transition: all .5s cubic-bezier(0.49, 0.45, 0.64, 0.63);
+   
+}
+.flashSellProductWrap:hover{
+    color:#111;
+}
+.flashSellProductWrap:hover.flashSellProductWrap::after{
+    opacity:0.1; 
+}
+.startIcon2{
+    background:#fff;
+    border-radius:100%;
+    padding:5px;
+}
+.iconWraps{
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    z-index:999;
+    transition: all .5s cubic-bezier(0.49, 0.45, 0.64, 0.63);
+
+}
+.flashSellProductWrap:hover .iconWraps{
+    right:10px;
+}
+.flashContent{
+    position: absolute;
+    z-index:99;
+
+}
+.flashCartBtn{
+   visibility: hidden;
+   opacity:0;
+   transition: all .5s cubic-bezier(0.49, 0.45, 0.64, 0.63);
+    position:relative;
+    top:10px;
+    }
+.flashCartName{
+transition:all .5s ease;
+position:relative;
+    top:10px;
+}
+.flashSellProductWrap:hover .flashCartBtn{
+    visibility: visible;
+    opacity:1;
+    top:-15px;
+}
+.flashSellProductWrap:hover .flashCartName{
+    visibility: hidden;
+    opacity:0;
+    top:0px;
+}
+.modalContainer{
+    z-index:99999 !important;
+
+}
+
+@media only screen and (max-width:375px){
+    .flashSellProductWrap{
+        width: 240px;
+       margin:0 auto;
+    } 
+}

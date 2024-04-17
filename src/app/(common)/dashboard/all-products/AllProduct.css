@@ -1,0 +1,40 @@
+th, td {
+    padding: 15px;
+    text-align:center;
+    white-space: nowrap;
+}
+th {
+    padding: 20px; 
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+
+
+.even-row {
+    background-color: #f2f2f2;
+}
+
+.odd-row {
+    background-color: #fff;
+}
+
+.table-container {
+    overflow-x: auto;
+  }
+  
+  .attendanceInputTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+
+  
+  @media screen and (max-width: 600px) {
+    .attendanceInputTable th,
+    .attendanceInputTable td {
+      padding: 6px;
+      font-size: 14px;
+    }
+  }
+  

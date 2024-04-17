@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+
+}
+body{
+    overflow-x: hidden;
+}
+.sectionMargin{
+    margin-top:80px;
+}
+
+.scrollToTopBtn {
+	width: 40px;
+	height: 40px;
+	background: #2251CF;
+	color: white;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 9999 !important;
+	border-radius: 100%;
+	display: grid;
+	place-items: center;
+	transition: all .5s ease;
+	animation-delay: .5s;
+}
